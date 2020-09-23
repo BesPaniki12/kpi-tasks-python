@@ -1,8 +1,8 @@
 # расчет kpi:
 # # Хомворк
 bs_hw = int(5000) # базовая ставка 5к для хв
-plm_hw = int(158) # план на текущий месяц
-zaf_hw = int(276) # сколько получилось
+plm_hw = int(405) # план на текущий месяц
+zaf_hw = int(538) # сколько получилось
 procp_hw = int(bs_hw * 10 / 100)# добавочный 10% от базовой ставки
 c_hw = zaf_hw-plm_hw # разница заявок между фактом и планом
 aa_hw = float('{:.1f}'.format(c_hw/plm_hw*100)) # на сколько процентов заявок больше чем в kpi
@@ -15,8 +15,8 @@ elif zaf_hw>plm_hw:
 
 # # Диссертатус
 bst_ds = int(3000) # базовая ставка 3к для дисс
-pl_m_ds = int(30) # план на текущий месяц
-zayavok_po_faktu_ds = int(37) # сколько получилось
+pl_m_ds = int(70) # план на текущий месяц
+zayavok_po_faktu_ds = int(66) # сколько получилось
 c_ds = zayavok_po_faktu_ds-pl_m_ds # разница заявок между фактом и планом
 aa_ds = float('{:.1f}'.format(c_ds/pl_m_ds*100)) # на сколько процентов заявок больше чем в kpi
 if zayavok_po_faktu_ds<pl_m_ds:
